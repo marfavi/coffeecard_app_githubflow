@@ -1,4 +1,4 @@
-abstract class Strings {
+abstract final class Strings {
   static const appTitle = 'Cafe Analog';
 
   // Titles for the app bar.
@@ -169,6 +169,9 @@ abstract class Strings {
   static const purchaseRejectedOrCanceledMessage =
       'The payment was rejected or cancelled. No tickets have been added to your account';
   static const purchaseError = "Uh oh, we couldn't complete that purchase";
+  static const purchaseTimeout = 'Purchase timed out';
+  static const purchaseTimeoutMessage =
+      'The payment confirmation was not received in time. If you have completed the purchase in MobilePay, please wait a few minutes';
 
   // Receipts
   static const receiptsPageTitle = 'Receipts';
@@ -360,5 +363,5 @@ abstract class Strings {
   static const String noInternet =
       "Can't connect to Analog. Are you connected to the internet?";
   static const String retry = 'Retry';
-  static const String unknownErrorOccured = 'an unknown error occured';
+  static const String unknownErrorOccured = 'An unknown error occured';
 }
